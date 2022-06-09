@@ -1,14 +1,38 @@
 <router-outlet></router-outlet>
-<div class="p-8">
-  <mat-chip-list aria-label="Fish selection">
-    <mat-chip class="__chip-es">One fish</mat-chip>
-    <mat-chip class="__chip-es">Two fish</mat-chip>
-    <mat-chip class="__chip-es">Primary fish</mat-chip>
-    <mat-chip class="__chip-es">Accent fish</mat-chip>
-  </mat-chip-list>
-  <div class="py-4 w-full">
-    <button mat-flat-button class="__btn-es">Primary</button>
+
+<div class="__container-es">
+  
+  <div class="sm:max-w-sm  sm:m-4 flex flex-col">
+    <h3 class="__filter-title-es">Filter by Category</h3>
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip class="__chip-es">One fish</mat-chip>
+      <mat-chip class="__chip-es">Two fish</mat-chip>
+      <mat-chip class="__chip-es">Primary fish</mat-chip>
+    </mat-chip-list>
+  </div>
+  
+
+  <div class="__petition-container-es">
+    <h5 class="__type-es">>> Candidate</h5>
+    <h1 class="__title-es">Petition Title</h1>
+    <h3 class="__subtitle-es">Subtext</h3>
+    <p class="__text-es">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem dolorem
+      voluptate maxime in quae et placeat optio, ea molestiae pariatur, beatae
+      est nam suscipit ipsam, doloremque quaerat dolor repudiandae!
+    </p>
+    <a class="__link-es">Read More</a>
+    <mat-progress-bar
+      class="__bar-es"
+      [color]="color"
+      [mode]="mode"
+      [value]="value"
+      [bufferValue]="bufferValue"
+    >
+    </mat-progress-bar>
+    <span class="__bar-data-es">5000 / 25000 Signatures Submitted</span>
+    <div class="w-full flex flex-row-reverse">
+      <button mat-flat-button class="__btn-es">Primary</button>
+    </div>
   </div>
 </div>
-
-

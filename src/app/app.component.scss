@@ -1,7 +1,53 @@
 .__chip-es{
-    @apply border-solid border focus:border-blue-500 border-gray-400 bg-white focus:bg-blue-100 prose font-mulish focus:font-extrabold font-bold focus:text-blue-600 text-gray-500;
+    @apply 
+    border-solid 
+    border 
+    focus:border-blue-500 
+    border-gray-400 
+    bg-white 
+    focus:bg-blue-100 
+    prose font-mulish focus:font-extrabold font-bold focus:text-blue-600 text-gray-500;
 }
 
 .__btn-es{
-    @apply bg-blue-600 rounded-lg w-full md:w-auto prose font-mulish font-extrabold py-3 px-6 text-white text-sm ;
+    @apply bg-blue-600 rounded-lg w-full sm:w-36 prose font-mulish font-extrabold py-3 px-6 text-white text-sm mt-4;
+}
+
+.__container-es{
+    @apply w-full flex flex-col sm:flex-row-reverse p-6 relative; 
+}
+
+.__petition-container-es{
+    @apply flex flex-col p-8 bg-white rounded-xl shadow-xl border border-gray-200 max-w-3xl my-4
+}
+.__type-es{
+    @apply prose font-roboto text-sm tracking-wider text-gray-600
+}
+
+.__title-es{
+    @apply prose font-mulish text-xl leading-7 text-gray-900 font-extrabold
+}
+
+.__subtitle-es{
+    @apply prose font-mulish text-base leading-5 text-gray-900 font-bold
+}
+
+.__text-es{
+    @apply prose font-mulish text-base leading-6 text-gray-900 font-normal tracking-xwider max-w-3xl
+}
+
+.__link-es{
+    @apply prose font-mulish text-base leading-5 text-blue-600 font-bold
+}
+
+.__bar-es{
+    @apply h-3 w-full rounded-lg mt-6
+}
+
+.__bar-data-es{
+    @apply prose font-mulish text-sm leading-4 text-black font-bold 
+}
+
+.__filter-title-es{
+    @apply hidden sm:block prose font-mulish text-base leading-5 text-gray-900 font-bold mb-2
 }
