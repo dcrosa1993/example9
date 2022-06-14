@@ -3,7 +3,7 @@
 <div class="__container-es">
   
   <div class="sm:max-w-sm  sm:m-4 flex flex-col">
-    <h3 class="__filter-title-es">Filter by Category</h3>
+    <h3 class="__filter-title-es">Filter by:</h3>
     <mat-chip-list aria-label="Fish selection">
       <mat-chip class="__chip-es">One fish</mat-chip>
       <mat-chip class="__chip-es">Two fish</mat-chip>
@@ -13,9 +13,9 @@
   
 
   <div class="__petition-container-es">
-    <h5 class="__type-es">>> Candidate</h5>
-    <h1 class="__title-es">Petition Title</h1>
-    <h3 class="__subtitle-es">Subtext</h3>
+    <h5 class="__type-es">>> Type</h5>
+    <h1 class="__title-es"> Title</h1>
+    <h3 class="__subtitle-es">Subtitle</h3>
     <p class="__text-es">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem dolorem
       voluptate maxime in quae et placeat optio, ea molestiae pariatur, beatae
@@ -30,9 +30,12 @@
       [bufferValue]="bufferValue"
     >
     </mat-progress-bar>
-    <span class="__bar-data-es">5000 / 25000 Signatures Submitted</span>
+    <span class="__bar-data-es">5000 / 25000 Completed</span>
     <div class="w-full flex flex-row-reverse">
       <button mat-flat-button class="__btn-es">Primary</button>
     </div>
+  </div>
+  <div>
+    <button mat-button (click)="openDialog()">Open dialog</button> {{dialog_result}}
   </div>
 </div>

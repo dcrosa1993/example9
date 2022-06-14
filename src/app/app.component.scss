@@ -48,6 +48,7 @@
     @apply prose font-mulish text-sm leading-4 text-black font-bold 
 }
 
+// la clase text-filter esta editada manualmente
 .__filter-title-es{
-    @apply hidden sm:block prose font-mulish text-base leading-5 text-gray-900 font-bold mb-2
+    @apply hidden sm:block prose font-mulish text-filter text-gray-900 font-bold mb-2
 }
