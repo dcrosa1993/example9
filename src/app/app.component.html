@@ -12,14 +12,12 @@
   </div>
   
 
-  <div class="__petition-container-es">
-    <h5 class="__type-es">>> Type</h5>
-    <h1 class="__title-es"> Title</h1>
-    <h3 class="__subtitle-es">Subtitle</h3>
+  <div class="__petition-container-es" *ngFor="let item of petitions">
+    <h5 class="__type-es">>> {{item.state}} </h5>
+    <h1 class="__title-es"> {{item.title}}</h1>
+    <h3 class="__subtitle-es">{{item.subtitle}}</h3>
     <p class="__text-es">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem dolorem
-      voluptate maxime in quae et placeat optio, ea molestiae pariatur, beatae
-      est nam suscipit ipsam, doloremque quaerat dolor repudiandae!
+      {{item.text}}
     </p>
     <a class="__link-es">Read More</a>
     <mat-progress-bar
@@ -30,12 +28,13 @@
       [bufferValue]="bufferValue"
     >
     </mat-progress-bar>
-    <span class="__bar-data-es">5000 / 25000 Completed</span>
+    <span class="__bar-data-es">{{item.now_signatures}} / {{item.total_signatures}} Completed</span>
     <div class="w-full flex flex-row-reverse">
       <button mat-flat-button class="__btn-es">Primary</button>
     </div>
   </div>
+
   <div>
-    <button mat-button (click)="openDialog()">Open dialog</button> {{dialog_result}}
+    <button mat-button (click)="showMore()">Open dialog</button> {{dialog_result}}
   </div>
 </div>
